@@ -1,9 +1,9 @@
 /*
  Agente Porco
  */
-package Porco;
+package Main;
 
-import static Porco.GenericAgent.t;
+import static Main.GenericAgent.t;
 import jade.core.Agent;
 import jade.core.behaviours.CyclicBehaviour;
 import java.awt.Color;

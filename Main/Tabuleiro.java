@@ -1,6 +1,6 @@
 /* Ambiente do Tabuleiro */
 
-package Porco;
+package Main;
 
 import java.awt.Graphics;
 import javax.swing.JPanel;
