@@ -28,10 +28,10 @@ int porco=3;
         matriz[3][3]=8; 
         
         //pos inicial dos agentes
-        matriz[0][2]=faz1;
-        matriz[4][2]=faz2;
-        matriz[2][2]=porco;
-        /*
+        //matriz[1][0]=faz1;
+        //matriz[1][4]=faz2;
+        //matriz[0][2]=porco;
+        ///*
         do{
             x = (int )(Math.random() * 4 + 0);
             y = (int )(Math.random() * 4 + 0);  
@@ -47,7 +47,7 @@ int porco=3;
             y = (int )(Math.random() * 4 + 0);  
         }while(matriz[x][y]!=0);        
         matriz[x][y]=porco;  
-        */
+        //*/
     }
     public double calculaDistancia(int x, int x2, int y, int y2){
         double dist, p1, p2;    
@@ -230,7 +230,7 @@ int porco=3;
             }  
         }
     }
-    public void movePorco(int x, int y, int agentId){
+   public void movePorco(int x, int y, int agentId){
 
     double left=0,right=0,up=0,down=0,left2=0,right2=0,up2=0,down2=0;
     int x_faz1,y_faz1,x_faz2,y_faz2;

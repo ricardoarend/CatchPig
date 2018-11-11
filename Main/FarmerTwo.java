@@ -36,8 +36,8 @@ public class FarmerTwo extends GenericAgent{
                 col=t.retornaColuna(t.faz2);
                 lin=t.retornaLinha(t.faz2);
                 t.moveFarmer(col,lin,2);
-                t.tickMaximo--;
-                t.numTick++;
+                //t.tickMaximo--;
+                //t.numTick++;
                 t.round=t.porco;
             }
         } 

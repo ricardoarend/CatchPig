@@ -61,7 +61,7 @@ public class PigAgent extends GenericAgent{
                 lin=t.retornaLinha(t.porco);                
                 t.movePorco(col,lin,t.porco);
                 t.tickMaximo--;
-                t.numTick++;
+                t.numTick++;                
                 t.round=t.faz1;
             }
         } 

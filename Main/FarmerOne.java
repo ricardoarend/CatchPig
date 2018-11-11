@@ -38,8 +38,8 @@ public class FarmerOne extends GenericAgent{
             col=t.retornaColuna(t.faz1);
             lin=t.retornaLinha(t.faz1);
             t.moveFarmer(col,lin,t.faz1);
-            t.tickMaximo--;
-            t.numTick++;
+           // t.tickMaximo--;
+            //t.numTick++;
             t.round=t.faz2;                 
         }
         }catch (InterruptedException ex){
