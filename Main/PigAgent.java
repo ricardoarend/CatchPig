@@ -15,16 +15,17 @@ import static javax.swing.JOptionPane.showMessageDialog;
 
 public class PigAgent extends GenericAgent{
     @Override
+    
     protected void setup() 
     {
         t=new Tabuleiro();
-        t.MontarTabuleiro();
+        t.posInicial();
         
         addBehaviour( new walk( this ) ); 
         
-        frame.setSize(500,500);
+        frame.setSize(400,400);
         frame.getContentPane().add(t);
-        frame.setLocationRelativeTo(null);
+        //frame.setLocationRelativeTo(null);
         frame.setBackground(Color.LIGHT_GRAY);
         frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         frame.setVisible(true);        
@@ -55,11 +56,16 @@ public class PigAgent extends GenericAgent{
         }
         try {
             frame.repaint();  
-            if(t.round==3){ 
+            if(t.round==t.pig){ 
                 Thread.sleep(1000);                             
-                col=t.retornaColuna(t.porco);
-                lin=t.retornaLinha(t.porco);                
-                t.movePorco(col,lin,t.porco);
+                col=t.retornaColuna(t.pig);
+                lin=t.retornaLinha(t.pig);                
+                t.movePig(col,lin,t.pig);/*
+                frame.repaint();
+                Thread.sleep(100);                             
+                col=t.retornaColuna(t.pig);
+                lin=t.retornaLinha(t.pig);                
+                t.movePorco(col,lin,t.pig); */               
                 t.tickMaximo--;
                 t.numTick++;                
                 t.round=t.faz1;

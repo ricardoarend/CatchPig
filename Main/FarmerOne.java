@@ -14,10 +14,8 @@ public class FarmerOne extends GenericAgent{
     protected void setup() 
     {     
         t=new Tabuleiro();
-        t.MontarTabuleiro();
-
-        addBehaviour( new walk( this ) );   
-        
+        t.posInicial();
+        addBehaviour( new walk( this ) );  
         
     }            
     class walk extends CyclicBehaviour 
@@ -37,9 +35,7 @@ public class FarmerOne extends GenericAgent{
             Thread.sleep(1000);
             col=t.retornaColuna(t.faz1);
             lin=t.retornaLinha(t.faz1);
-            t.moveFarmer(col,lin,t.faz1);
-           // t.tickMaximo--;
-            //t.numTick++;
+            t.moveFarmer(col,lin,t.faz1);          
             t.round=t.faz2;                 
         }
         }catch (InterruptedException ex){
