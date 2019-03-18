@@ -63,7 +63,9 @@ ArrayList<Integer> farmers = new ArrayList();
         }while(matriz[x][y]!=0);        
         matriz[x][y]=pig; 
         //*/
-        
+        try{
+        Thread.sleep(2000);
+        }catch(InterruptedException ex) {}
     }
     public double calculaDistancia(int x, int x2, int y, int y2){
         double dist, p1, p2;    
