@@ -17,7 +17,6 @@ int tickMaximo=80;
 int numTick=0;
 int faz1=1;
 int faz2=2;
-int faz3=3;
 int pig=9;
 int round=pig;
 ArrayList<Integer> farmers = new ArrayList();
@@ -28,7 +27,6 @@ ArrayList<Integer> farmers = new ArrayList();
         // lista dos fazendeiros
         farmers.add(faz1);
         farmers.add(faz2);
-        farmers.add(faz3);
         // eixo [x][y] 4 blocos
         matriz[1][1]=8;
         matriz[3][1]=8;
@@ -47,17 +45,11 @@ ArrayList<Integer> farmers = new ArrayList();
             y = (int )(Math.random() * 4 + 0);  
         }while(matriz[x][y]!=0);        
         matriz[x][y]=faz2;
-       /* do{
-            x = (int )(Math.random() * 4 + 0);
-            y = (int )(Math.random() * 4 + 0);  
-        }while(matriz[x][y]!=0);
-        matriz[x][y]=faz3;*/
         do{
             x = (int )(Math.random() * 4 + 0);
             y = (int )(Math.random() * 4 + 0);  
         }while(matriz[x][y]!=0);        
-        matriz[x][y]=pig; 
-        //*/
+        matriz[x][y]=pig;         
         try{
         Thread.sleep(2000);
         }catch(InterruptedException ex) {}
