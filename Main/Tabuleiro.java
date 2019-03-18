@@ -35,13 +35,8 @@ ArrayList<Integer> farmers = new ArrayList();
         matriz[1][3]=8;
         matriz[3][3]=8; 
         
-        /*//pos inicial dos agentes
-        matriz[4][2]=faz1;
-        matriz[4][0]=faz2;
-        matriz[4][1]=faz3;
-        matriz[4][4]=pig;
-        */
-        ///*
+        //pos inicial dos agentes
+       
         do{
             x = (int )(Math.random() * 4 + 0);
             y = (int )(Math.random() * 4 + 0);  
