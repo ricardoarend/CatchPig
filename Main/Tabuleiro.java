@@ -35,6 +35,7 @@ ArrayList<Integer> farmers = new ArrayList();
         matriz[1][3]=8;
         matriz[3][3]=8; 
         
+
         /*//pos inicial pré definida 
         matriz[4][2]=faz1;
         matriz[4][0]=faz2;
@@ -42,6 +43,10 @@ ArrayList<Integer> farmers = new ArrayList();
         matriz[4][4]=pig;
         */
         ///*
+
+        //pos inicial dos agentes
+       
+
         do{
             x = (int )(Math.random() * 4 + 0);
             y = (int )(Math.random() * 4 + 0);  
@@ -61,8 +66,12 @@ ArrayList<Integer> farmers = new ArrayList();
             x = (int )(Math.random() * 4 + 0);
             y = (int )(Math.random() * 4 + 0);  
         }while(matriz[x][y]!=0);        
+
         matriz[x][y]=pig; 
         //*/
+
+        matriz[x][y]=pig;         
+
         try{
         Thread.sleep(2000);
         }catch(InterruptedException ex) {}
