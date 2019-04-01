@@ -35,7 +35,7 @@ ArrayList<Integer> farmers = new ArrayList();
         matriz[1][3]=8;
         matriz[3][3]=8; 
         
-        /*//pos inicial dos agentes
+        /*//pos inicial pré definida 
         matriz[4][2]=faz1;
         matriz[4][0]=faz2;
         matriz[4][1]=faz3;
@@ -63,7 +63,9 @@ ArrayList<Integer> farmers = new ArrayList();
         }while(matriz[x][y]!=0);        
         matriz[x][y]=pig; 
         //*/
-        
+        try{
+        Thread.sleep(2000);
+        }catch(InterruptedException ex) {}
     }
     public double calculaDistancia(int x, int x2, int y, int y2){
         double dist, p1, p2;    

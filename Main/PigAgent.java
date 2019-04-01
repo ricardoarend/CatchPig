@@ -25,7 +25,7 @@ public class PigAgent extends GenericAgent{
         
         frame.setSize(400,400);
         frame.getContentPane().add(t);
-        //frame.setLocationRelativeTo(null);
+        frame.setLocationRelativeTo(null);
         frame.setBackground(Color.LIGHT_GRAY);
         frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         frame.setVisible(true);        
@@ -60,12 +60,7 @@ public class PigAgent extends GenericAgent{
                 Thread.sleep(1000);                             
                 col=t.retornaColuna(t.pig);
                 lin=t.retornaLinha(t.pig);                
-                t.movePig(col,lin,t.pig);/*
-                frame.repaint();
-                Thread.sleep(100);                             
-                col=t.retornaColuna(t.pig);
-                lin=t.retornaLinha(t.pig);                
-                t.movePorco(col,lin,t.pig); */               
+                t.movePig(col,lin,t.pig);                              
                 t.tickMaximo--;
                 t.numTick++;                
                 t.round=t.faz1;
